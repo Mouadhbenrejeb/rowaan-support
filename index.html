@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>روان — الدعم</title>
+<meta name="description" content="صفحة الدعم لثيم روان لمتاجر سلة: طرق التواصل ودليل الاستخدام.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #f7f2f8;
+    --paper: #ffffff;
+    --ink: #2c1d2e;
+    --ink-soft: #6b5a6e;
+    --mauve: #7b4f86;
+    --mauve-deep: #54305e;
+    --tint: #efe4f2;
+    --line: #e3d6e6;
+    --shadow: 0 30px 60px -38px rgba(84, 48, 94, 0.5);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #19121b; --paper: #231a25; --ink: #f3eaf4; --ink-soft: #bfaec2;
+      --mauve: #c79bd3; --mauve-deep: #e2c6ea; --tint: #2d2230; --line: #3a2d3d;
+      --shadow: 0 30px 60px -38px rgba(0, 0, 0, 0.8);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .wrap { max-width: 860px; margin-inline: auto; padding: 48px 20px 72px; display: grid; gap: 44px; }
+  h1, h2, .brand { font-family: "Readex Pro", "IBM Plex Sans Arabic", sans-serif; margin: 0; text-wrap: balance; }
+  .brand { font-size: clamp(2.4rem, 2rem + 2.4vw, 3.4rem); font-weight: 700; color: var(--mauve-deep); line-height: 1; }
+  header p { margin: 10px 0 0; color: var(--ink-soft); max-width: 60ch; }
+  h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 14px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+    padding: 20px; display: grid; gap: 6px; box-shadow: var(--shadow); text-decoration: none; color: inherit;
+  }
+  .card span { font-size: 0.8rem; color: var(--ink-soft); letter-spacing: 0.02em; }
+  .card b { font-family: "Readex Pro", sans-serif; font-weight: 600; font-size: 1.05rem; color: var(--mauve-deep); word-break: break-word; }
+  a.card:hover { border-color: var(--mauve); }
+  ul { margin: 0; padding-inline-start: 1.2em; color: var(--ink-soft); }
+  li { margin-bottom: 6px; }
+  .note { font-size: 0.9rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 20px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">روان</div>
+    <p>ثيم لمتاجر سلة، مخصّص للأزياء والعبايات والموضة النسائية. هذه صفحة الدعم: كل طرق التواصل ودليل الاستخدام.</p>
+  </header>
+
+  <section>
+    <h2>التواصل معنا</h2>
+    <div class="cards">
+      <a class="card" href="mailto:rooonn2025@gmail.com">
+        <span>البريد الإلكتروني</span>
+        <b>rooonn2025@gmail.com</b>
+      </a>
+      <a class="card" href="https://wa.me/966547436042">
+        <span>واتساب — محادثة مباشرة</span>
+        <b>‎+966 54 743 6042</b>
+      </a>
+      <a class="card" href="guide.html">
+        <span>دليل الاستخدام</span>
+        <b>شرح الأقسام والإعدادات</b>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>ما الذي يشمله الدعم</h2>
+    <ul>
+      <li>تثبيت الثيم على متجرك وضبطه أول مرة.</li>
+      <li>شرح أي قسم أو إعداد داخل محرّر سلة.</li>
+      <li>معالجة أي خلل في الثيم نفسه، وإصدار تحديث له.</li>
+      <li>الإجابة عن أسئلة ما قبل الشراء.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>خارج نطاق الدعم</h2>
+    <ul>
+      <li>إعدادات المتجر نفسها في سلة: الشحن، الدفع، الضرائب، الطلبات.</li>
+      <li>إدخال المنتجات والصور والأسعار في متجرك.</li>
+      <li>تطبيقات وخدمات خارجية لا علاقة لها بالثيم.</li>
+      <li>تعديلات برمجية خاصة على نسخة الثيم في متجرك.</li>
+    </ul>
+  </section>
+
+  <p class="note">عند مراسلتنا، اذكر اسم متجرك ورابطه ووصفًا لما يحدث، مع لقطة شاشة إن أمكن. هذا يختصر وقت الحل.</p>
+</div>

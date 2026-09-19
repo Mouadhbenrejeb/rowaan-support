@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>روان — دليل الاستخدام</title>
+<meta name="description" content="دليل استخدام ثيم روان لمتاجر سلة: التثبيت، الإعدادات، الأقسام، وحلول للمشكلات الشائعة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #f7f2f8;
+    --paper: #ffffff;
+    --ink: #2c1d2e;
+    --ink-soft: #6b5a6e;
+    --mauve: #7b4f86;
+    --mauve-deep: #54305e;
+    --tint: #efe4f2;
+    --line: #e3d6e6;
+    --shadow: 0 30px 60px -38px rgba(84, 48, 94, 0.5);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #19121b; --paper: #231a25; --ink: #f3eaf4; --ink-soft: #bfaec2;
+      --mauve: #c79bd3; --mauve-deep: #e2c6ea; --tint: #2d2230; --line: #3a2d3d;
+      --shadow: 0 30px 60px -38px rgba(0, 0, 0, 0.8);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+    font-size: 16px; line-height: 1.85;
+  }
+  .wrap { max-width: 900px; margin-inline: auto; padding: 44px 20px 72px; display: grid; gap: 40px; }
+  h1, h2, h3, .brand { font-family: "Readex Pro", "IBM Plex Sans Arabic", sans-serif; margin: 0; text-wrap: balance; }
+  .brand { font-size: 0.95rem; color: var(--mauve); font-weight: 600; }
+  h1 { font-size: clamp(1.9rem, 1.6rem + 1.6vw, 2.6rem); font-weight: 700; color: var(--mauve-deep); margin-top: 6px; }
+  h2 { font-size: 1.3rem; font-weight: 600; margin-bottom: 12px; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 18px 0 4px; }
+  p { margin: 0 0 10px; }
+  header p { color: var(--ink-soft); max-width: 62ch; }
+  ol, ul { margin: 0 0 10px; padding-inline-start: 1.3em; }
+  li { margin-bottom: 6px; }
+  .panel { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 22px; box-shadow: var(--shadow); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: start; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--mauve-deep); font-weight: 600; white-space: nowrap; }
+  td.k { color: var(--ink); font-weight: 500; white-space: nowrap; }
+  td.v { color: var(--ink-soft); }
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .toc a {
+    display: inline-block; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px;
+    background: var(--paper); font-size: 0.875rem; color: inherit; text-decoration: none;
+  }
+  .toc a:hover { border-color: var(--mauve); color: var(--mauve-deep); }
+  .note { font-size: 0.9rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 18px; }
+  a { color: var(--mauve-deep); }
+  @media (max-width: 600px) { table, tbody, tr, td, th { display: block; } th { border: 0; padding-bottom: 0; } td.k { padding-bottom: 0; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">روان</div>
+    <h1>دليل استخدام الثيم</h1>
+    <p>كل ما تحتاجينه لضبط الثيم على متجرك: التثبيت، الإعدادات العامة، أقسام الصفحة الرئيسية، وحلول لأكثر الأسئلة تكرارًا. للدعم: <a href="index.html">صفحة الدعم</a>.</p>
+  </header>
+
+  <ul class="toc">
+    <li><a href="#install">التثبيت</a></li>
+    <li><a href="#editor">محرّر سلة</a></li>
+    <li><a href="#settings">إعدادات الثيم</a></li>
+    <li><a href="#sections">أقسام الصفحة الرئيسية</a></li>
+    <li><a href="#mobile">الجوال والكمبيوتر</a></li>
+    <li><a href="#faq">مشكلات شائعة</a></li>
+  </ul>
+
+  <section id="install">
+    <h2>١. التثبيت</h2>
+    <div class="panel">
+      <ol>
+        <li>من لوحة تحكم متجرك في سلة: <b>المتجر ← الثيمات</b>.</li>
+        <li>اختاري ثيم «روان» ثم <b>تثبيت</b>.</li>
+        <li>بعد التثبيت اضغطي <b>تخصيص</b> لفتح المحرّر.</li>
+      </ol>
+      <p>التثبيت لا يحذف منتجاتك ولا طلباتك ولا صفحاتك. الثيم يعرض بيانات متجرك كما هي.</p>
+    </div>
+  </section>
+
+  <section id="editor">
+    <h2>٢. محرّر سلة</h2>
+    <div class="panel">
+      <p>داخل المحرّر تجدين قائمة أقسام الصفحة الرئيسية. لكل قسم:</p>
+      <ul>
+        <li><b>سحب وإفلات</b> لتغيير ترتيبه.</li>
+        <li><b>إعدادات</b> خاصة به تظهر عند الضغط عليه.</li>
+        <li><b>إظهار/إخفاء</b> على الجوال أو الكمبيوتر بشكل منفصل.</li>
+        <li><b>حذف</b> القسم، أو <b>إضافة</b> نسخة جديدة منه في أي مكان.</li>
+      </ul>
+      <p>احفظي بعد كل تعديل، ثم افتحي معاينة المتجر للتأكد.</p>
+    </div>
+  </section>
+
+  <section id="settings">
+    <h2>٣. إعدادات الثيم</h2>
+    <div class="panel">
+      <h3>الألوان</h3>
+      <p>خمس لوحات جاهزة، أو ألوان خاصة بك بصيغة HEX (اللون الأساسي، اللون المميّز، الخلفية، لون النص). يمكن أيضًا استخدام ألوان المتجر المضبوطة في سلة.</p>
+
+      <h3>الشكل العام</h3>
+      <p>حجم العناوين، شكل الزوايا، شكل الأزرار، مظهر الأقسام، المسافات بينها، تشغيل أو إيقاف الحركات وسرعتها.</p>
+
+      <h3>الهيدر</h3>
+      <p>نص بجانب الشعار، الشريط العلوي، تثبيت الهيدر عند التمرير، بحث ظاهر، أيقونة المفضلة، توسيط القائمة، وشريط تنقل سفلي للجوال.</p>
+
+      <h3>بطاقة المنتج</h3>
+      <p>شكل البطاقة، نسبة الصورة وطريقة احتوائها، إظهار التقييم والمفضلة وزر الإضافة، وعدد المنتجات في الصف للجوال والكمبيوتر.</p>
+
+      <h3>صفحة المنتج</h3>
+      <p>مسار التنقل، الشريط السفلي الثابت، دليل المقاسات، «يُشترى معًا»، المنتجات المشابهة، الوسوم، تكبير الصورة، وملاحظات الشحن والاستبدال والعناية.</p>
+
+      <h3>الفوتر</h3>
+      <p>شكل الفوتر، نبذة المتجر، روابط التواصل، تطبيقات المتجر، وسائل الدفع، وشارات الثقة.</p>
+    </div>
+  </section>
+
+  <section id="sections">
+    <h2>٤. أقسام الصفحة الرئيسية</h2>
+    <div class="panel">
+      <table>
+        <tr><th>القسم</th><th>ماذا يعرض</th></tr>
+        <tr><td class="k">شريط ترويجي متحرك</td><td class="v">جمل قصيرة تتحرك في شريط أعلى الصفحة.</td></tr>
+        <tr><td class="k">البنر الرئيسي</td><td class="v">شرائح بصورة وعنوان وزر، مع صورة مستقلة للجوال.</td></tr>
+        <tr><td class="k">بطاقات التصنيفات</td><td class="v">تصنيفات متجرك بصور وروابط.</td></tr>
+        <tr><td class="k">شريط المميزات</td><td class="v">مزايا مثل الشحن السريع والدفع الآمن، بأيقونات.</td></tr>
+        <tr><td class="k">منتجات مختارة</td><td class="v">منتجات من متجرك: الأحدث، الأكثر مبيعًا، تصنيف، أو اختيار يدوي.</td></tr>
+        <tr><td class="k">بطاقتان بصورة ونص</td><td class="v">بطاقتان تحريريتان لعرض قصة أو مجموعة.</td></tr>
+        <tr><td class="k">معرض صور متحرك</td><td class="v">شريط صور يتحرك أفقيًا.</td></tr>
+        <tr><td class="k">تسوّقي الإطلالة</td><td class="v">صورة إطلالة عليها نقاط مرتبطة بمنتجاتك الحقيقية.</td></tr>
+        <tr><td class="k">قبل وبعد</td><td class="v">منزلق يقارن صورتين.</td></tr>
+        <tr><td class="k">عرض بعدّاد تنازلي</td><td class="v">بانر تخفيض بعدّاد ينتهي في وقت تحدّدينه.</td></tr>
+        <tr><td class="k">تسوّقي حسب المناسبة</td><td class="v">بانرات مناسبات ترتبط بتصنيفات أو روابط.</td></tr>
+        <tr><td class="k">تسوّقي حسب السعر</td><td class="v">شرائح أسعار تنقل إلى نتائج مفلترة.</td></tr>
+        <tr><td class="k">عرض المجموعة</td><td class="v">عدة منتجات معًا مع مجموع أسعارها الحيّة.</td></tr>
+        <tr><td class="k">شريط هدف السلة</td><td class="v">شريط يوضح كم تبقّى للوصول للشحن المجاني.</td></tr>
+        <tr><td class="k">أرقامنا</td><td class="v">إحصائيات مختصرة عن المتجر.</td></tr>
+        <tr><td class="k">جدول المقارنة</td><td class="v">مقارنة بين خيارات أو باقات بصفوف قابلة للتخصيص.</td></tr>
+        <tr><td class="k">دليل أخذ المقاسات</td><td class="v">خطوات القياس مع رسم توضيحي.</td></tr>
+        <tr><td class="k">دليل العناية</td><td class="v">تعليمات العناية بالقماش.</td></tr>
+        <tr><td class="k">فروع المتجر</td><td class="v">الفروع بعناوينها وأوقات العمل.</td></tr>
+        <tr><td class="k">الأسئلة الشائعة</td><td class="v">أسئلة وأجوبة قابلة للطيّ.</td></tr>
+        <tr><td class="k">قسم النشرة والتواصل</td><td class="v">اشتراك النشرة وروابط التواصل.</td></tr>
+      </table>
+      <p style="margin-top:14px">كل قسم يمكن تكراره أكثر من مرة بترتيب وإعدادات مختلفة.</p>
+    </div>
+  </section>
+
+  <section id="mobile">
+    <h2>٥. الجوال والكمبيوتر</h2>
+    <div class="panel">
+      <p>الثيم مصمّم للشاشتين بشكل منفصل: على الجوال تصبح العناوين في الوسط، والبطاقات أصغر، وبعض القوائم تتحول إلى صف أفقي ينزلق.</p>
+      <p>في إعدادات كل قسم خياران: <b>الظهور على الجوال</b> و<b>الظهور على الكمبيوتر</b>. أطفئي أيهما شئت لإخفاء القسم على تلك الشاشة فقط.</p>
+      <p>للبنر الرئيسي: أضيفي <b>صورة الجوال</b> إلى جانب صورة الكمبيوتر، ليحمّل كل جهاز الصورة المناسبة له.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>٦. مشكلات شائعة</h2>
+    <div class="panel">
+      <h3>قسم لا يظهر في المتجر</h3>
+      <p>تأكدي من تفعيل ظهوره على الشاشة التي تعاينين عليها، ومن حفظ التعديل، ومن أن القسم يحتوي على محتوى: قسم فارغ لا يُعرض.</p>
+
+      <h3>صور المنتجات في «تسوّقي الإطلالة» أو «عرض المجموعة» لا تظهر</h3>
+      <p>هذه الأقسام تجلب بيانات المنتج من متجرك. تأكدي من أن المنتج ظاهر في قناة «متجر الويب» وغير محذوف أو مخفي.</p>
+
+      <h3>الألوان لم تتغير</h3>
+      <p>عند استخدام ألوان خاصة، اكتبي اللون بصيغة HEX كاملة مثل <code>#7B4F86</code>. أي صيغة أخرى تُتجاهل ويعود الثيم للوحة المختارة.</p>
+
+      <h3>العناوين طويلة وتكسر التصميم</h3>
+      <p>قلّلي حجم العناوين من إعدادات الشكل العام، أو اختصري نص العنوان.</p>
+
+      <h3>لم تُحل المشكلة</h3>
+      <p>راسلينا من <a href="index.html">صفحة الدعم</a> مع رابط متجرك واسم القسم ولقطة شاشة.</p>
+    </div>
+  </section>
+
+  <p class="note">يتم تحديث هذا الدليل مع كل تحديث للثيم.</p>
+</div>
